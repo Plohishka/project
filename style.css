@@ -1,12 +1,57 @@
-body {
-	margin: 0;
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
 }
-img {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 1px solid black;
-	box-sizing: border-box;
-	object-position: center;
+h1 {
+    color: rgb(6, 164, 192);
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(211, 15, 123);
+}
+p {
+    text-align: justify;
+    font-family: 'Great Vibes', cursive;
+}
+li {
+    list-style-type: circle;
+    color: rgb(155, 17, 160);
+}
+#article1 p {
+    font-weight: bold;
+}
+#article2 p {
+    font-style: italic;
+}
+#article3 p {
+    text-decoration: line-through rgb(89, 168, 182);
+}
+#article4 p {
+    color: red;
+}
+#article5 p {
+    text-decoration: overline rgb(211, 146, 49);
+}
+#article6 p {
+    color: green;
+}
+#article7 p {
+    text-decoration: underline wavy rgb(179, 26, 140);
+}
+#article8 p {
+    color: blue;
+}
+#article9 p {
+    text-decoration: underline rgb(150, 54, 9);
+}
+#article10 p {
+    color: yellow;
+}
+#background {
+    background-color: black;
+}
+.color-white {
+    color: white;
 }
