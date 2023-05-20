@@ -1,74 +1,48 @@
-
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
 }
-.padding {
-    padding: 20px 160px 20px 20px;
+.border-none {
+    border: none;
 }
-.absolut-block {
-    position: absolute;
-    display: block;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid black;
+    padding-left: 15px;
 }
-.display-none {
-    display: none;
+.heading {
+    font-size: 50px;
+    margin-bottom: 25px;
 }
-.link {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    width: 100%;
+.sub-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
-ul {
-    margin: 0;
-    padding: 0;
+.sub-heading::before {
+    content: '*';
+    padding-right: 5px;
 }
-.main-list {
-    font-size: 0;
-    background-color: rgb(233, 125, 1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
+input {
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
-.main-list li {
-    list-style-type: none;
-    background-color: rgb(233, 125, 1);
+.agreements input{
+    width: 30px; 
 }
-.list-item {
-    display: inline-block;
-    position: relative;
-    width: 14.2%;
-    padding: 20px 0;
-
+.preferences input {
+    width: 20px;
 }
-.sub-list {
-    top: 63px;
+.tour input {
+    width: 150px;
 }
-.third-sub-list {
-    top: 126px;
-    left: 224px;
+#button {
+    width: 180px;
 }
-.fourth-sub-list {
-    top: 126px;
-    left: 138px;
-}
-.list-item:hover .web-design-item{
-    display: block;
-    width: inherit;
-}
-.web-design-item:hover .tutorials-item {
-    display: block;
-}
-.tutorials-item:hover .other-item {
-    display: block;
-} 
-.main-list li:hover {
-    background-color: rgb(218, 83, 83);
-}
-.first-article {
-    margin-top: 100px;
-}
-
 
