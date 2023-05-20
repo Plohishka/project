@@ -16,61 +16,59 @@
         <h1 class="heading">Travel reservation form</h1>
         <h2 class="sub-heading">denotes mandatory</h2>
 
-                <!-- name-form -->
+        <!-- name-form -->
 
         <label for="name-form">Full name*:</label>
-        <input type="text" name="email" id="name-form" placeholder="FirstName LastName">
+        <input type="text" name="email" id="name-form" placeholder="FirstName LastName" pattern="^ [а - z0 - 9_-] {3,15} $">
 
-                <!-- email-form -->
+        <!-- email-form -->
 
         <label for="email-form">Email address*:</label>
-        <input type="text" name="email" id="email-form" placeholder="EMAIL_ADDRESS">
+        <input type="text" name="email" id="email-form" placeholder="EMAIL_ADDRESS" pattern="">
 
-                <!--  tour-packages -->
+        <!--  tour-packages -->
 
-        <fieldset class="border-none tour">                    
-            <legend>Select Tour Package*:</legend>
-            <input type="text" name="tour-packages" list="tours">
+        <div class="tour flex-column">
+            <label>Select Tour Package*:</label>
+            <input type="text" name="tour-packages" list="tours" placeholder="Tour">
 
             <datalist id="tours">
-                <option value="Goa"></option>
+                <option value="Goa" selected></option>
                 <option value="Bermuda"></option>
                 <option value="French-polynesia"></option>
             </datalist>
-        </fieldset>
+        </div>
 
-                    <!-- arrival-date -->
+        <!-- arrival-date -->
 
         <label for="arrival-date">Arrival date*:</label>
         <input type="date" id="arrival-date" name="arrival-date">
 
-                    <!-- person-number -->
+        <!-- person-number -->
 
         <label for="person-number">Number of persons*:</label>
-        <input type="number" id="person-number" placeholder="Type your number">
+        <input type="text" id="person-number" placeholder="Type your number">
 
-                   <!-- preferences --> 
-
-        <fieldset class="border-none preferences">                      
-            <legend>What would you want to avail?*</legend>
-            <legend>Boarding<input type="checkbox" name="Boarding"></legend>
-            <legend>Fooding<input type="checkbox" name="Fooding"></legend>
-            <legend>Sightseeing<input type="checkbox" name="Sightseeing"></legend>
-        </fieldset>
-        
-                <!-- discount  code -->
+        <!-- preferences -->
+        <div class="preferences flex-column">
+            <p>What would you want to avail?*</p>
+            <label>Boarding<input type="checkbox" name="Boarding"></label>
+            <label>Fooding<input type="checkbox" name="Fooding"></label>
+            <label>Sightseeing<input type="checkbox" name="Sightseeing"></label>
+        </div>
+        <!-- discount  code -->
 
         <label for="discount">Discount Coupon code:</label>
-        <input type="text" id="discount" placeholder="type your discount code">
+        <input type="text" id="discount" placeholder="type your discount code" name="discount-coupon">
 
-                <!-- agreements -->
+        <!-- agreements -->
 
-        <fieldset class="border-none agreements">
-            <legend>Terms and conditions*</legend>
+        <div class="agreements">
+            <p>Terms and conditions*</p>
             <label for="agree"><input type="radio" name="agreements" value="agree" id="agree">I agree</label>
             <label for="disagree"><input type="radio" name="agreements" id="disagree" value="disagree">I
                 disagree</label>
-        </fieldset>
+        </div>
 
         <button id="button" type="submit">Complete reservation</button>
 

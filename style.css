@@ -8,12 +8,18 @@
 .border-none {
     border: none;
 }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 .form {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 500px;
     border: 1px solid black;
+    background-color: #74203e;
     padding-left: 15px;
+    color: white;
 }
 .heading {
     font-size: 50px;
@@ -36,6 +42,9 @@ input {
 .agreements input{
     width: 30px; 
 }
+.preferences p {
+    margin-bottom: 10px;
+}
 .preferences input {
     width: 20px;
 }
@@ -44,5 +53,7 @@ input {
 }
 #button {
     width: 180px;
+    margin-bottom: 30px;
+    background-color: white;
 }
 
