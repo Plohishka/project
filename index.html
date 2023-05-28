@@ -6,64 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Houme page</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <form class="form" action="" method="POST">
-
-        <h2>Personal Details</h2>
-
-        <label>Name:<input type="text" name="name"></label>
-        <label>Password:<input type="password" name="password"></label>
-        <label>E-mail id::<input type="email" name="email"></label>
-
-        <div class="margin">
-            <label>Gender:</label>
-            <label><input type="radio" value="male" name="gender">Male</label>
-            <label><input type="radio" value="female" name="gender">Femail</label>
-        </div>
-
-        <label>Contact#: <input type="text" name="contact"></label>
-
-        <h2>Educational Qualification</h2>
-
-
-        <label>Degree: <input name="degree" list="degree" placeholder="--Select Group--"></label>
-
-        <datalist id="degree">
-            <option value="first-degree"></option>
-            <option value="second-degree"></option>
-            <option value="third-degree"></option>
-        </datalist>
-
-
-        <label>Engineering: <input name="engineering" list="engineering" placeholder="--Select Group--"></label>
-
-        <datalist id="engineering">
-            <option value="first-group"></option>
-            <option value="second-group"></option>
-            <option value="third-group"></option>
-        </datalist>
-
-        <div class="margin">
-            <label>Hobbies:</label>
-            <label><input type="checkbox" name="chess">Plaing chess</label>
-            <label><input type="checkbox" name="books">Reading books</label>
-        </div>
-
-        <h2>Address</h2>
-        <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
-
-        <div>
-            <label>Attch Resum:</label>
-            <input type="file" name="file">
-        </div>
-
-        <button class="submit">SUBMIT</button>
-
-    </form>
+    <header>
+        <section class="greetings">
+            <h1 class="heading">Welcome To The Beach</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus, quod harum cum odio voluptas.
+            </p>
+            <button id="button">Read More</button>
+        </section>
+    </header>
+    <main>
+        <article>
+            <p class="color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae provident mollitia illo
+                facilis est debitis omnis necessitatibus, doloremque fugit iste nemo consequuntur temporibus quod
+                voluptates excepturi quibusdam! Eaque ipsa reiciendis, a optio hic eligendi adipisci vero quo rem.
+                Consequuntur aliquid possimus nisi aliquam corrupti cupiditate culpa corporis incidunt, beatae excepturi
+                eius natus iure ipsam ex deleniti tempora a, adipisci dolor inventore praesentium harum quisquam ducimus
+                non. Laudantium non itaque harum sint, deleniti aspernatur neque labore. Illum, provident quod, eaque
+                aliquid, assumenda similique perferendis neque voluptatem non illo reprehenderit ipsa sequi!</p>
+        </article>
+        <article class="second">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae provident mollitia illo facilis est
+                debitis omnis necessitatibus, doloremque fugit iste nemo consequuntur temporibus quod voluptates
+                excepturi quibusdam! Eaque ipsa reiciendis, a optio hic eligendi adipisci vero quo rem. Consequuntur
+                aliquid possimus nisi aliquam corrupti cupiditate culpa corporis incidunt, beatae excepturi eius natus
+                iure ipsam ex deleniti tempora a, adipisci dolor inventore praesentium harum quisquam ducimus non.
+                Laudantium non itaque harum sint, deleniti aspernatur neque labore. Illum, provident quod, eaque
+                aliquid, assumenda similique perferendis neque voluptatem non illo reprehenderit ipsa sequi!</p>
+        </article>
+        <article class="third">
+            <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero ab architecto, qui
+                recusandae esse?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero ab architecto, qui recusandae
+                esse?</p>
+            <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore vero ab architecto, qui
+                recusandae esse?</p>
+        </article>
+    </main>
 
 </body>
 

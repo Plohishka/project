@@ -1,60 +1,88 @@
+
 * {
-    margin: 0;
-    bottom: 0;
+    font-size: 20px;
     box-sizing: border-box;
+    color: #926239;
+    font-family: 'Great Vibes', cursive;
 }
 
-.form {
+.color {
+    color: white;
+    background-color: #926239;
+}
+
+main p {
+    line-height: 30px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header {
+    background-image: url('./images/ракушка.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetings {
+    text-align: center;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.greetings p {
+    margin-bottom: 20px
+}
+
+#button {
+    color: #926239;
+    background: none;
+    border: 1px solid #926239;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+#button:hover {
+    color: white;
+    background: #926239;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 637px) {
+    .greetings p, .heading {
+        text-align: center;
+    }
+
+    .third {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 638px) {
+    .greetings p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 260px) and (max-width: 1200px) {
+    .greetings {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px;
-    border: 1px solid red;
-    background-color: #ccff66;
-    padding: 10px 0 35px 0;
+    justify-content: center;
+    }
 }
 
-.form h2 {
-    font-size: 20px;
-    color: red;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-input {
-    margin-bottom: 20px;
-}
-
-.margin label {
-    margin: 0 5px;
-}
-.margin input {
-    margin-right: 5px;
-}
-
-textarea {
-    resize: none;
-    width: 300px;
-    height: 80px;
-    margin-bottom: 25px;
-}
-
-.submit {
-    width: 150px;
-    padding: 10px 0;
-    margin-top: 20px;
-    background-color: #ff8c25;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    font-style: italic;
-}
-.submit::after {
-    content: '➭';
-    padding-left: 10px;
-}
-.submit:hover {
-    opacity: 0.8;
-}
